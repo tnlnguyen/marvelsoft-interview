@@ -31,6 +31,9 @@ npm run develop
 
 ## Improvement
 There are some points we have to improve because of the lack of help from pure javascript and also from backend side:
-	- Saving chat history.
+
+	- Save and load chat history after relogin the applicaton.
+	
 	- Forwarding old messages that user has not received yet.
+	
 	- More clearly signals like: Sent, Received, Seen.

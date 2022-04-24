@@ -1,0 +1,131 @@
+* {
+  font-family: 'Avenir';
+}
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 97vh;
+}
+.quit {
+  position: absolute;
+  cursor: pointer;
+  left: 10;
+  top: 10;
+}
+.quitImg {
+  width: 32px;
+  height: 32px;
+}
+.bubbleContainer {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+.bubbleWrapper {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+  color: #fff;
+}
+.inlineContainer {
+  display: inline-flex;
+}
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+.inlineIcon {
+  width:20px;
+  object-fit: contain;
+}
+.ownBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #5b5377;
+	border-radius: 16px 16px 0 16px;
+	border: 1px solid #443f56;
+ 
+}
+.otherBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #6C8EA4;
+	border-radius: 16px 16px 16px 0;
+	border: 1px solid #54788e;
+  
+}
+.own {
+	align-self: flex-end;
+}
+.other {
+	align-self: flex-start;
+}
+span.own,
+span.other{
+  font-size: 14px;
+  color: grey;
+}
+
+.bubbleInputarea {
+  display: flex;
+  padding: 10px;
+  border-top: var(--border);
+  background: #eee;
+}
+.bubbleInputarea * {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.bubbleInput {
+  flex: 1;
+  background: #ddd;
+}
+.bubbleSendBtn {
+  margin-left: 10px;
+  background: rgb(0, 196, 65);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+}
+.bubbleSendBtn:hover {
+  background: rgb(0, 180, 50);
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.headerStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerStatus img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+
+}
+#name {
+  margin-bottom: 0;
+}
+
+.headerTitle h4 {
+  margin: 0px 0px;
+}

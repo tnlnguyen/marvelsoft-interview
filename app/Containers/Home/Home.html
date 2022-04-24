@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
+    <link rel="stylesheet" href="Home.css" />
+    <script type="text/javascript" src="Home.js"></script>
+  </head>
+  <body>
+    <div class="quit">
+      <img class="quitImg" src="../../assets/back-button.png"/>
+    </div>
+
+    <div class="headerContainer">
+      <div class="headerTitle">
+        <h2 id="name">Chat Messages</h2>
+      </div>
+
+      <div class="headerStatus">
+        <p id="status">Offline</p>
+        <img class="icon" src="../../assets/cross.png">
+      </div>
+    </div>
+
+    <div class="bubbleContainer"></div>
+
+    <form class="bubbleInputarea">
+      <input type="text" class="bubbleInput" placeholder="Enter your message..." />
+      <button type="button" onclick="onSend()" class="bubbleSendBtn">Send</button>
+    </form>
+  </body>
+</html>

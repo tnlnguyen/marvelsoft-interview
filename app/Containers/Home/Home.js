@@ -170,9 +170,10 @@ const onClose = (e) => {
   ipcRenderer.send('change-view', [`./app/containers/Login/Login.html`])
 
   if (isInterrupt) {
-    isInterrupt = true;
     alert('Someone just entered your account!!!')
   }
+  
+  isInterrupt = true;
 }
 
 const onBack = () => {
